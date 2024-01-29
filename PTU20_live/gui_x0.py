@@ -45,6 +45,7 @@ window = sg.Window("X's and O's", layout)
 turn = 0
 game = {}
 
+
 while True:
     event, values = window.read()
     if event == sg.WIN_CLOSED:
@@ -66,3 +67,9 @@ while True:
 
     if event == '-RESET-':
         turn, game = reset_game(window)
+
+def main():
+    print("Kosimas tuoj bus!")
+
+if __name__ == "__main__":
+    main()
